@@ -1,13 +1,14 @@
 /*
- * Создание промиса
+ * Промис - это объект, у которого есть несколько состояний
+
  *  - Класс Promise
  *  - resolve
  *  - reject
  *  - Promise.prototype.then(onResolve, onReject)
  */
 
-const promise = new Promise((resolve, reject) => {
-    const canFulfill = Math.random() > 0.5;
+const promise = new Promise((resolve, reject) => { //new Promise создает обещание - просто объект
+    const canFulfill = Math.random() > 0.5; // это обещание записывается в переменную
 
     setTimeout(() => {
         if (canFulfill) {
