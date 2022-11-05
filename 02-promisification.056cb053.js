@@ -1,0 +1,2 @@
+var fetchPokemonById=function(o){return fetch("https://pokeapi.co/api/v2/pokemon/".concat(o)).then((function(o){return o.json()}))};function onFetchSuccess(o){console.log("onFetchSuccess -> onFetchSuccess"),console.log(o)}function onFetchError(o){console.log("onFetchError -> onFetchError"),console.log("Это в блоке catch"),console.log(o)}fetchPokemonById(1).then(onFetchSuccess).catch(onFetchError),fetchPokemonById(2).then(onFetchSuccess).catch(onFetchError),fetchPokemonById(3).then(onFetchSuccess).catch(onFetchError);
+//# sourceMappingURL=02-promisification.056cb053.js.map
